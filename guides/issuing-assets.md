@@ -16,12 +16,12 @@ In the Stellar SDK, assets are represented with the `Asset` class:
 <code-example name="Representing Assets">
 
 ```js
-var astroDollar = new StellarSdk.Asset(
+var astroDollar = new Stellar.Sdk.Asset(
   'AstroDollar', 'GC2BKLYOOYPDEFJKLKY6FNNRQMGFLVHJKQRGNSSRRGSMPGF32LHCQVGF');
 ```
 
 ```java
-KeyPair issuer = StellarSdk.Keypair.fromAccountId(
+KeyPair issuer = Stellar.Sdk.KeyPair.fromAccountId(
   "GC2BKLYOOYPDEFJKLKY6FNNRQMGFLVHJKQRGNSSRRGSMPGF32LHCQVGF");
 Asset astroDollar = Asset.createNonNativeAsset("AstroDollar", issuer);
 ```
